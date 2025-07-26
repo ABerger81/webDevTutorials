@@ -203,6 +203,8 @@ textarea {
     transition: border-color 0.3s ease;
     width: 100%;
     max-width: 400px;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
 }
 
 input[type="text"]:focus,
@@ -211,6 +213,14 @@ textarea:focus {
     border-color: #007bff;
     outline: none;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    background-color: #f0f8ff;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    padding: 10px;
+    border-radius: 4px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 input[type="submit"],
@@ -224,4 +234,9 @@ input[type="button"] {
     border-radius: 4px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
 }
