@@ -1,192 +1,235 @@
 <!-- '!DOCTYPE' declaration for HTML5 -->
 <!DOCTYPE html>
-<!-- 'html' defines the root of an HTML element -->
-<!-- 'lang=en-US' first two characters define the language of the HTML page, and the last two characters define the country -->
+<!-- 'html' element is the root element of an HTML page -->
+<!-- 'lang' attribute specifies the language of the document, e.g., 'en' for English -->
 <html lang="en">
+
+<!-- 'head' contains meta-information about the HTML document -->
+<!-- 'meta' defines metadata about an HTML document, e.g., character set, viewport settings, etc. -->
+<!-- 'charset=UTF-8' defines the character encoding for the HTML document -->
+<!-- 'viewport' sets the visible area of the web page, e.g., width=device-width, initial-scale=1.0 -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- '<title>' - title bar or page tab -->
+    <!-- 'title' defines the title of the HTML document, displayed in the browser tab -->
+    <!-- The title should be descriptive and relevant to the content of the page -->
     <title>Document</title>
 </head>
 
-<!-- 'body' defines the documents body -->
-<!-- 'style="background-color:' set the bg color -->
+<!-- 'body' contains the content of the HTML document, e.g., text, images, links, etc. -->
+<!-- 'style' element defines internal CSS styles for the HTML document -->
 
 <body style="background-color: blue;">
-    <!-- 'h1 - h6' defines HTML headings -->
-    <h1>My First Heading</h1>
-    <!-- 'p' paragraph -->
-    <p>My first paragraph.</p>
-    <!-- 'a' = anchor = a link, 'href' = hyperlink reference -->
-    <!-- 'a'= tag, 'href'=attribute -->
-    <a href="https//:www.w3schools.com">This is a link</a>
-    <!-- 'img'= image, 'src'= source, 'alt'=alternate text if image not displayed -->
-    <!-- Absolute URL - Links to an external foo (src="https://www.w3schools.com/images/img_girl.jpg") -->
-    <!-- Relative URL - Links to an foo that is hosted  within the website -->
-    <!-- (src="/images/img_girl.jpg".) -->
-    <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
-    <!-- 'br' line break (new line)-->
-    <p>This is<br>a paragraph<br>with line breaks</p>
-    <!-- 'style' e.g., color, font, sixe, and more to an element <tagname style="property:value;" -->
-    <p style="color: red;">This is a red paragraph</p>
-    <!-- 'title' tooltip when hovering with mouse/pointer -->
-    <p title="I'm a tooltip">This is a paragraph with a tooltip</p>
-    <!-- 'hr' defines a thematic break, often displayed as a horizontal rule, separates content -->
+    <!-- 'section' element defines a section in the document -->
+    <!-- It can be used to group related content together -->
+    <section style="color: white;">
+        <!-- 'h1' element defines a top-level heading -->
+        <!-- 'p' element defines a paragraph -->
+        <!-- 'a' element defines a hyperlink -->
+        <!-- 'img' element defines an image -->
+        <!-- 'br' element defines a line break -->
+        <!-- 'style' attribute can be used to apply inline styles to elements -->
+        <!-- 'title' attribute provides additional information about an element, displayed as a tooltip when hovering over the element -->
+        <!-- 'h1 - h6' defines HTML headings -->
+        <h1>Welcome to My Web Page</h1>
+        <!-- 'p' defines a paragraph -->
+        <p>This is a simple HTML document.</p>
+        <!-- 'a' defines a hyperlink, 'href' attribute specifies the URL of the page the link goes to -->
+        <!-- 'target="_blank"' opens the link in a new tab -->
+        <a href="https://www.w3schools.com" target="_blank">This is a link</a>
+        <!-- 'img' defines an image, 'src' attribute specifies the path to the image file, 'alt' attribute provides alternative text for the image -->
+        <!-- 'width' and 'height' attributes specify the dimensions of the image -->
+        <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+        <!-- 'br' defines a line break -->
+        <p>This is a paragraph with a line break<br>Here is the next line</p>
+        <!-- 'style' e.g., color, font, size, and more to an element <tagname style="property:value;" -->
+        <p style="font-size: 20px;">This is a larger paragraph</p>
+        <!-- 'title' attribute provides additional information about an element, displayed as a tooltip when hovering over the element -->
+        <p title="I'm a tooltip">This is a paragraph with a tooltip</p>
+        <!-- 'hr' defines a thematic break, often displayed as a horizontal rule, separates content -->
+        <hr>
+        <br>
+
+        <!-- 'pre' element defines preformatted text. The text inside a <pre> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks -->
+        <pre>
+                My Bonnie lies over the ocean.
+                
+                My Bonnie lies over the sea.
+                
+                My Bonnie lies over the ocean.
+                
+                Oh, bring back my Bonnie to me.
+            </pre>
+    </section>
     <hr>
-    <!-- 'pre' element defines preformatted text. The text inside a <pre> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks -->
-    <pre>
-        My Bonnie lies over the ocean.
-        
-        My Bonnie lies over the sea.
-        
-        My Bonnie lies over the ocean.
-        
-        Oh, bring back my Bonnie to me.
-    </pre>
+    <br>
+
+    <section>
+        <!-- HTML Styles -->
+        <!-- Use the style attribute for styling HTML elements -->
+        <!-- Use background-color for background color -->
+        <!-- Use color for text colors -->
+        <!-- Use font-family for text fonts -->
+        <!-- Use font-size for text sizes -->
+        <!-- Use text-align for text alignment  -->
+        <h1 style="background-color: yellow;">This is a heading</h1>
+        <p style="background-color: tomato;">This is a paragraph</p>
+        <h1 style="font-family: Verdana;">This font is 'Verdana'</h1>
+        <p style="font-family: 'Courier New', ;">This font is 'Courier New'</p>
+        <h1 style="font-size: 300%;">This heading is size of 300%</h1>
+        <p style="font-size: 160%;">This paragraph is size of 160%</p>
+        <h1 style="text-align: center;">Centered Heading</h1>
+        <p style="text-align: left;">This is a left-aligned paragraph</p>
+    </section>
     <hr>
-    <!-- HTML Styles
-        Use the style attribute for styling HTML elements
-        Use background-color for background color
-        Use color for text colors
-        Use font-family for text fonts
-        Use font-size for text sizes
-        Use text-align for text alignment 
-    -->
-    <h1 style="background-color: yellow;">This is a heading</h1>
-    <p style="background-color: tomato;">This is a paragraph</p>
-    <h1 style="font-family: Verdana;">This font is 'Verdana'</h1>
-    <p style="font-family: 'Courier New', ;">This font is 'Courier New'</p>
-    <h1 style="font-size: 300%;">This heading is size of 300%</h1>
-    <p style="font-size: 160%;">This paragraph is size of 160%</p>
-    <h1 style="text-align: center;">Centered Heading</h1>
-    <p style="text-align: left;">This is a left-aligned paragraph</p>
+    <br>
+
+    <section>
+        <!-- HTML Text Formatting -->
+        <!-- Use the <b> element to define bold text -->
+        <!-- Use the <strong> element to define important text -->
+        <!-- Use the <i> element to define italic text -->
+        <!-- Use the <em> element to define emphasized text -->
+        <!-- Use the <small> element to define smaller text -->
+        <!-- Use the <sub> element to define subscripted text -->
+        <!-- Use the <sup> element to define superscripted text -->
+        <!-- Use the <ins> element to define inserted text -->
+        <!-- Use the <del> element to define deleted text -->
+        <!-- Use the <mark> element to define marked/highlighted text -->
+        <b>This text is bold</b>
+        <strong>This text is important!</strong>
+        <i>This text is italic</i>
+        <em>This text is emphasized</em>
+        <small>This is some smaller text.</small>
+        <p>Don not forget to buy <mark>milk</mark> today.</p>
+        <p>My favourite color is <del>blue</del> red.</p>
+        <p>This is <sub>subscripted</sub> text.</p>
+        <p>This is <sup>superscripted</sup> text.</p>
+        <hr>
+        <!-- Quotations and Citation -->
+        <!-- <abbr>	Defines an abbreviation or acronym -->
+        <!-- <address>	Defines contact information for the author/owner of a document -->
+        <!-- <bdo>	Defines the text direction -->
+        <!-- <blockquote>	Defines a section that is quoted from another source -->
+        <!-- <cite>	Defines the title of a work -->
+        <!-- <q> Defines a short inline quotation -->
+
+        <p>Here is a quote from WWF's website</p>
+        <blockquote cite="http://www.worldwildlife.org/who/index.html">
+            For 60 years, WWF has worked to help people and nature thrive. As
+            the
+            world's leading conservation organization, WWF works in nearly 100
+            countries. At every level, we collaborate with people around the
+            world
+            to develop and deliver innovative solutions that protect
+            communities,
+            wildlife, and the places in which they live.
+        </blockquote>
+        <p>WWF's goal is to: <q>Build a future wher people live in harmony with
+                nature.</q></p>
+        <p>The <abbr title="World Health Organization">WHO</abbr> was founded in
+            1948.</p>
+        <address>
+            Written by John Doe.<br>
+            Visit us at:<br>
+            Example.com<br>
+            Box 564, Disneyland<br>
+            USA
+        </address>
+        <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+        <!-- <bdo> Bi-Directional Override, overrides current text direction -->
+        <bdo dir="rtl">This text will be written from rigt to left</bdo>
+    </section>
     <hr>
-    <!-- HTML Formatting 
-        <b>	Defines bold text
-        <em>	Defines emphasized text 
-        <i>	Defines a part of text in an alternate voice or mood
-        <small>	Defines smaller text
-        <strong>	Defines important text
-        <sub>	Defines subscripted text
-        <sup>	Defines superscripted text
-        <ins>	Defines inserted text
-        <del>	Defines deleted text
-        <mark>	Defines marked/highlighted text
-    -->
-    <b>This text is bold</b>
-    <strong>This text is important!</strong>
-    <i>This text is italic</i>
-    <em>This text is emphasized</em>
-    <small>This is some smaller text.</small>
-    <p>Don not forget to buy <mark>milk</mark> today.</p>
-    <p>My favourite color is <del>blue</del> red.</p>
-    <p>This is <sub>subscripted</sub> text.</p>
-    <p>This is <sup>superscripted</sup> text.</p>
+    <br>
+
+    <section>
+        <!-- Colors -->
+        <!-- Add Color Picker -->
+        <b>Color picker in input field</b>
+        <input type="color">
+        <!-- Text Color -->
+        <p style="color: tomato;">Hello World</p>
+        <p style="color: dodgerblue;">Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Reiciendis aperiam in,</p>
+        <p style="color: mediumseagreen;">itaque nam cum libero illum magnam
+            asperiores, ipsa nostrum eum eligendi minus aut, doloremque placeat
+            necessitatibus recusandae! Incidunt, maiores?</p>
+        <!-- Border Color -->
+        <p style="border: 2px solid tomato;">Hello World</p>
+        <p style="border: 2px solid dodgerblue;">Hello World</p>
+        <p style="border: 2px solid violet;">Hello World</p>
+        <!-- Color Values -->
+        <!-- rgb(0, 0, 0)=black, rgb(255, 255, 255)=white, equal values = shades of gray (rgb(128, 128, 128)=gray) -->
+        <p style="background-color: rgb(255, 99, 71);">Hello World rgb(255, 99,
+            71)
+        </p>
+        <!-- 'a'=alpha 0.0(fully transparent) - 1.0(fully opaque) -->
+        <p style="background-color: rgba(255, 99, 71, 0.5);">Hello World
+            rgba(red,
+            green, blue, alpha)</p>
+        <!-- Hexadecimal values between #000000 and #ffffff, e.g. #ff0000, shades of grey #404040 -->
+        <p style="background-color: #ff6347;">Hello World #ff6347</p>
+        <!-- hsl(hue, saturation, lightness), Hue=0-360, 0=red, 120=green, 240=blue, saturation=0-100% (0%=a shade of gray, 100%=full pure color), lightness=0-100%, 0%=black, 100%=white, shades of grey (set h and s to 0, and adjust l from 0% - 100%, e.g. hsl(0, 0%, 50%)) -->
+        <p style="background-color: hsl(9, 100%, 64%);">Hello World hsl(hue,
+            saturation, lightness)</p>
+        <p style="background-color: hsla(9, 100%, 64%, 0.5);">Hello World
+            hsla(hue,
+            saturation, lightness, alpha)</p>
+    </section>
     <hr>
-    <!-- Quotations and Citation 
-        <abbr>	Defines an abbreviation or acronym
-        <address>	Defines contact information for the author/owner of a document
-        <bdo>	Defines the text direction
-        <blockquote>	Defines a section that is quoted from another source
-        <cite>	Defines the title of a work
-        <q>	Defines a short inline quotation
-    -->
-    <p>Here is a quote from WWF's website</p>
-    <blockquote cite="http://www.worldwildlife.org/who/index.html">
-        For 60 years, WWF has worked to help people and nature thrive. As the
-        world's leading conservation organization, WWF works in nearly 100
-        countries. At every level, we collaborate with people around the world
-        to develop and deliver innovative solutions that protect communities,
-        wildlife, and the places in which they live.
-    </blockquote>
-    <p>WWF's goal is to: <q>Build a future wher people live in harmony with
-            nature.</q></p>
-    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in
-        1948.</p>
-    <address>
-        Written by John Doe.<br>
-        Visit us at:<br>
-        Example.com<br>
-        Box 564, Disneyland<br>
-        USA
-    </address>
-    <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
-    <!-- <bdo> Bi-Directional Override, overrides current text direction -->
-    <bdo dir="rtl">This text will be written from rigt to left</bdo>
+    <br>
+
+    <section>
+        <!-- HTML Styles - CSS -->
+        <!-- Use the HTML style attribute for inline styling
+            Use the HTML <style> element to define internal CSS
+            Use the HTML <link> element to refer to an external CSS file
+            Use the HTML <head> element to store <style> and <link> elements
+            Use the CSS color property for text colors
+            Use the CSS font-family property for text fonts
+            Use the CSS font-size property for text sizes
+            Use the CSS border property for borders
+            Use the CSS padding property for space inside the border
+            Use the CSS margin property for space outside the border -->
+        <!-- Can be added to HTML documents in 3 ways: -->
+        <!-- Inline- by using the style attribute inside HTML elements -->
+        <p style="color: red;">This is a red paragraph</p>
+        <!-- Internal- by using a <style> element in the <head> section -->
+        <style>
+            p {
+                color: blue;
+            }
+        </style>
+        <p>This is a blue paragraph</p>
+        <!-- External- by using a <link> element to link an external CSS file -->
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <p>This is a paragraph with an external CSS file</p>
+        <!-- CSS Colors, Fonts and Sizes -->
+        <!-- The CSS 'color' property defines the text color -->
+        <!-- The CSS 'font-family' property defines the font of the text -->
+        <!-- The CSS 'font-size' property defines the size of the text -->
+        <p style="color: red; font-family: Arial; font-size: 20px;">This is a
+            red
+            paragraph with Arial font and size 20px</p>
+        <!-- The CSS 'border' property defines the border around an HTML element -->
+        <!-- The CSS 'padding' property defines a padding (space) between the content and the border -->
+        <p style="border: 2px solid red; padding: 10px;">This is a paragraph
+            with
+            a red border and padding</p>
+        <!-- The CSS 'margin' property defines a margin (space) outside the border -->
+        <p style="margin: 20px;">This is a paragraph with a margin</p>
+    </section>
     <hr>
-    <!-- Colors -->
-    <!-- Add Color Picker -->
-    <b>Color picker in input field</b>
-    <input type="color">
-    <!-- Text Color -->
-    <p style="color: tomato;">Hello World</p>
-    <p style="color: dodgerblue;">Lorem ipsum dolor sit amet consectetur,
-        adipisicing elit. Reiciendis aperiam in,</p>
-    <p style="color: mediumseagreen;">itaque nam cum libero illum magnam
-        asperiores, ipsa nostrum eum eligendi minus aut, doloremque placeat
-        necessitatibus recusandae! Incidunt, maiores?</p>
-    <!-- Border Color -->
-    <p style="border: 2px solid tomato;">Hello World</p>
-    <p style="border: 2px solid dodgerblue;">Hello World</p>
-    <p style="border: 2px solid violet;">Hello World</p>
-    <!-- Color Values -->
-    <!-- rgb(0, 0, 0)=black, rgb(255, 255, 255)=white, equal values = shades of gray (rgb(128, 128, 128)=gray) -->
-    <p style="background-color: rgb(255, 99, 71);">Hello World rgb(255, 99, 71)
-    </p>
-    <!-- 'a'=alpha 0.0(fully transparent) - 1.0(fully opaque) -->
-    <p style="background-color: rgba(255, 99, 71, 0.5);">Hello World rgba(red,
-        green, blue, alpha)</p>
-    <!-- Hexadecimal values between #000000 and #ffffff, e.g. #ff0000, shades of grey #404040 -->
-    <p style="background-color: #ff6347;">Hello World #ff6347</p>
-    <!-- hsl(hue, saturation, lightness), Hue=0-360, 0=red, 120=green, 240=blue, saturation=0-100% (0%=a shade of gray, 100%=full pure color), lightness=0-100%, 0%=black, 100%=white, shades of grey (set h and s to 0, and adjust l from 0% - 100%, e.g. hsl(0, 0%, 50%)) -->
-    <p style="background-color: hsl(9, 100%, 64%);">Hello World hsl(hue,
-        saturation, lightness)</p>
-    <p style="background-color: hsla(9, 100%, 64%, 0.5);">Hello World hsla(hue,
-        saturation, lightness, alpha)</p>
-    <hr>
-    <!-- HTML Styles - CSS -->
-    <!-- Use the HTML style attribute for inline styling
-    Use the HTML <style> element to define internal CSS
-    Use the HTML <link> element to refer to an external CSS file
-    Use the HTML <head> element to store <style> and <link> elements
-    Use the CSS color property for text colors
-    Use the CSS font-family property for text fonts
-    Use the CSS font-size property for text sizes
-    Use the CSS border property for borders
-    Use the CSS padding property for space inside the border
-    Use the CSS margin property for space outside the border -->
-    <!-- Can be added to HTML documents in 3 ways: -->
-    <!-- Inline- by using the style attribute inside HTML elements -->
-    <p style="color: red;">This is a red paragraph</p>
-    <!-- Internal- by using a <style> element in the <head> section -->
-    <style>
-        p {
-            color: blue;
-        }
-    </style>
-    <p>This is a blue paragraph</p>
-    <!-- External- by using a <link> element to link an external CSS file -->
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <p>This is a paragraph with an external CSS file</p>
-    <!-- CSS Colors, Fonts and Sizes -->
-    <!-- The CSS 'color' property defines the text color -->
-    <!-- The CSS 'font-family' property defines the font of the text -->
-    <!-- The CSS 'font-size' property defines the size of the text -->
-    <p style="color: red; font-family: Arial; font-size: 20px;">This is a red
-        paragraph with Arial font and size 20px</p>
-    <!-- The CSS 'border' property defines the border around an HTML element -->
-    <!-- The CSS 'padding' property defines a padding (space) between the content and the border -->
-    <p style="border: 2px solid red; padding: 10px;">This is a paragraph with
-        a red border and padding</p>
-    <!-- The CSS 'margin' property defines a margin (space) outside the border -->
-    <p style="margin: 20px;">This is a paragraph with a margin</p>
-    <hr>
-    <!-- snippets -->
-    <!-- Capture/upload image/video from users mobile device -->
-    <input type="file" capture="environment" accept="video/*">
-    <input type="file" capture="user" accept="image/*">
+    <br>
+
+    <section>
+        <!-- Snippets -->
+        <!-- Capture/upload image/video from users mobile device -->
+        <input type="file" capture="environment" accept="video/*">
+        <input type="file" capture="user" accept="image/*">
+    </section>
 </body>
 
 </html>
