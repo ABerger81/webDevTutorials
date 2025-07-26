@@ -132,15 +132,58 @@
     <p style="border: 2px solid dodgerblue;">Hello World</p>
     <p style="border: 2px solid violet;">Hello World</p>
     <!-- Color Values -->
+    <!-- rgb(0, 0, 0)=black, rgb(255, 255, 255)=white, equal values = shades of gray (rgb(128, 128, 128)=gray) -->
     <p style="background-color: rgb(255, 99, 71);">Hello World rgb(255, 99, 71)
     </p>
-    <p style="background-color: #ff6347;">Hello World #ff6347</p>
-    <p style="background-color: hsl(9, 100%, 64%);">Hello World hsl(hue,
-        saturation, lightness)</p>
+    <!-- 'a'=alpha 0.0(fully transparent) - 1.0(fully opaque) -->
     <p style="background-color: rgba(255, 99, 71, 0.5);">Hello World rgba(red,
         green, blue, alpha)</p>
+    <!-- Hexadecimal values between #000000 and #ffffff, e.g. #ff0000, shades of grey #404040 -->
+    <p style="background-color: #ff6347;">Hello World #ff6347</p>
+    <!-- hsl(hue, saturation, lightness), Hue=0-360, 0=red, 120=green, 240=blue, saturation=0-100% (0%=a shade of gray, 100%=full pure color), lightness=0-100%, 0%=black, 100%=white, shades of grey (set h and s to 0, and adjust l from 0% - 100%, e.g. hsl(0, 0%, 50%)) -->
+    <p style="background-color: hsl(9, 100%, 64%);">Hello World hsl(hue,
+        saturation, lightness)</p>
     <p style="background-color: hsla(9, 100%, 64%, 0.5);">Hello World hsla(hue,
         saturation, lightness, alpha)</p>
+    <hr>
+    <!-- HTML Styles - CSS -->
+    <!-- Use the HTML style attribute for inline styling
+    Use the HTML <style> element to define internal CSS
+    Use the HTML <link> element to refer to an external CSS file
+    Use the HTML <head> element to store <style> and <link> elements
+    Use the CSS color property for text colors
+    Use the CSS font-family property for text fonts
+    Use the CSS font-size property for text sizes
+    Use the CSS border property for borders
+    Use the CSS padding property for space inside the border
+    Use the CSS margin property for space outside the border -->
+    <!-- Can be added to HTML documents in 3 ways: -->
+    <!-- Inline- by using the style attribute inside HTML elements -->
+    <p style="color: red;">This is a red paragraph</p>
+    <!-- Internal- by using a <style> element in the <head> section -->
+    <style>
+        p {
+            color: blue;
+        }
+    </style>
+    <p>This is a blue paragraph</p>
+    <!-- External- by using a <link> element to link an external CSS file -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <p>This is a paragraph with an external CSS file</p>
+    <!-- CSS Colors, Fonts and Sizes -->
+    <!-- The CSS 'color' property defines the text color -->
+    <!-- The CSS 'font-family' property defines the font of the text -->
+    <!-- The CSS 'font-size' property defines the size of the text -->
+    <p style="color: red; font-family: Arial; font-size: 20px;">This is a red
+        paragraph with Arial font and size 20px</p>
+    <!-- The CSS 'border' property defines the border around an HTML element -->
+    <!-- The CSS 'padding' property defines a padding (space) between the content and the border -->
+    <p style="border: 2px solid red; padding: 10px;">This is a paragraph with
+        a red border and padding</p>
+    <!-- The CSS 'margin' property defines a margin (space) outside the border -->
+    <p style="margin: 20px;">This is a paragraph with a margin</p>
+    <hr>
+    <!-- snippets -->
     <!-- Capture/upload image/video from users mobile device -->
     <input type="file" capture="environment" accept="video/*">
     <input type="file" capture="user" accept="image/*">
