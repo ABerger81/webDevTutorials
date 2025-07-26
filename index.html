@@ -1,0 +1,149 @@
+<!-- '!DOCTYPE' declaration for HTML5 -->
+<!DOCTYPE html>
+<!-- 'html' defines the root of an HTML element -->
+<!-- 'lang=en-US' first two characters define the language of the HTML page, and the last two characters define the country -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- '<title>' - title bar or page tab -->
+    <title>Document</title>
+</head>
+
+<!-- 'body' defines the documents body -->
+<!-- 'style="background-color:' set the bg color -->
+
+<body style="background-color: blue;">
+    <!-- 'h1 - h6' defines HTML headings -->
+    <h1>My First Heading</h1>
+    <!-- 'p' paragraph -->
+    <p>My first paragraph.</p>
+    <!-- 'a' = anchor = a link, 'href' = hyperlink reference -->
+    <!-- 'a'= tag, 'href'=attribute -->
+    <a href="https//:www.w3schools.com">This is a link</a>
+    <!-- 'img'= image, 'src'= source, 'alt'=alternate text if image not displayed -->
+    <!-- Absolute URL - Links to an external foo (src="https://www.w3schools.com/images/img_girl.jpg") -->
+    <!-- Relative URL - Links to an foo that is hosted  within the website -->
+    <!-- (src="/images/img_girl.jpg".) -->
+    <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+    <!-- 'br' line break (new line)-->
+    <p>This is<br>a paragraph<br>with line breaks</p>
+    <!-- 'style' e.g., color, font, sixe, and more to an element <tagname style="property:value;" -->
+    <p style="color: red;">This is a red paragraph</p>
+    <!-- 'title' tooltip when hovering with mouse/pointer -->
+    <p title="I'm a tooltip">This is a paragraph with a tooltip</p>
+    <!-- 'hr' defines a thematic break, often displayed as a horizontal rule, separates content -->
+    <hr>
+    <!-- 'pre' element defines preformatted text. The text inside a <pre> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks -->
+    <pre>
+        My Bonnie lies over the ocean.
+        
+        My Bonnie lies over the sea.
+        
+        My Bonnie lies over the ocean.
+        
+        Oh, bring back my Bonnie to me.
+    </pre>
+    <hr>
+    <!-- HTML Styles
+        Use the style attribute for styling HTML elements
+        Use background-color for background color
+        Use color for text colors
+        Use font-family for text fonts
+        Use font-size for text sizes
+        Use text-align for text alignment 
+    -->
+    <h1 style="background-color: yellow;">This is a heading</h1>
+    <p style="background-color: tomato;">This is a paragraph</p>
+    <h1 style="font-family: Verdana;">This font is 'Verdana'</h1>
+    <p style="font-family: 'Courier New', ;">This font is 'Courier New'</p>
+    <h1 style="font-size: 300%;">This heading is size of 300%</h1>
+    <p style="font-size: 160%;">This paragraph is size of 160%</p>
+    <h1 style="text-align: center;">Centered Heading</h1>
+    <p style="text-align: left;">This is a left-aligned paragraph</p>
+    <hr>
+    <!-- HTML Formatting 
+        <b>	Defines bold text
+        <em>	Defines emphasized text 
+        <i>	Defines a part of text in an alternate voice or mood
+        <small>	Defines smaller text
+        <strong>	Defines important text
+        <sub>	Defines subscripted text
+        <sup>	Defines superscripted text
+        <ins>	Defines inserted text
+        <del>	Defines deleted text
+        <mark>	Defines marked/highlighted text
+    -->
+    <b>This text is bold</b>
+    <strong>This text is important!</strong>
+    <i>This text is italic</i>
+    <em>This text is emphasized</em>
+    <small>This is some smaller text.</small>
+    <p>Don not forget to buy <mark>milk</mark> today.</p>
+    <p>My favourite color is <del>blue</del> red.</p>
+    <p>This is <sub>subscripted</sub> text.</p>
+    <p>This is <sup>superscripted</sup> text.</p>
+    <hr>
+    <!-- Quotations and Citation 
+        <abbr>	Defines an abbreviation or acronym
+        <address>	Defines contact information for the author/owner of a document
+        <bdo>	Defines the text direction
+        <blockquote>	Defines a section that is quoted from another source
+        <cite>	Defines the title of a work
+        <q>	Defines a short inline quotation
+    -->
+    <p>Here is a quote from WWF's website</p>
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 60 years, WWF has worked to help people and nature thrive. As the
+        world's leading conservation organization, WWF works in nearly 100
+        countries. At every level, we collaborate with people around the world
+        to develop and deliver innovative solutions that protect communities,
+        wildlife, and the places in which they live.
+    </blockquote>
+    <p>WWF's goal is to: <q>Build a future wher people live in harmony with
+            nature.</q></p>
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in
+        1948.</p>
+    <address>
+        Written by John Doe.<br>
+        Visit us at:<br>
+        Example.com<br>
+        Box 564, Disneyland<br>
+        USA
+    </address>
+    <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+    <!-- <bdo> Bi-Directional Override, overrides current text direction -->
+    <bdo dir="rtl">This text will be written from rigt to left</bdo>
+    <hr>
+    <!-- Colors -->
+    <!-- Add Color Picker -->
+    <b>Color picker in input field</b>
+    <input type="color">
+    <!-- Text Color -->
+    <p style="color: tomato;">Hello World</p>
+    <p style="color: dodgerblue;">Lorem ipsum dolor sit amet consectetur,
+        adipisicing elit. Reiciendis aperiam in,</p>
+    <p style="color: mediumseagreen;">itaque nam cum libero illum magnam
+        asperiores, ipsa nostrum eum eligendi minus aut, doloremque placeat
+        necessitatibus recusandae! Incidunt, maiores?</p>
+    <!-- Border Color -->
+    <p style="border: 2px solid tomato;">Hello World</p>
+    <p style="border: 2px solid dodgerblue;">Hello World</p>
+    <p style="border: 2px solid violet;">Hello World</p>
+    <!-- Color Values -->
+    <p style="background-color: rgb(255, 99, 71);">Hello World rgb(255, 99, 71)
+    </p>
+    <p style="background-color: #ff6347;">Hello World #ff6347</p>
+    <p style="background-color: hsl(9, 100%, 64%);">Hello World hsl(hue,
+        saturation, lightness)</p>
+    <p style="background-color: rgba(255, 99, 71, 0.5);">Hello World rgba(red,
+        green, blue, alpha)</p>
+    <p style="background-color: hsla(9, 100%, 64%, 0.5);">Hello World hsla(hue,
+        saturation, lightness, alpha)</p>
+    <!-- Capture/upload image/video from users mobile device -->
+    <input type="file" capture="environment" accept="video/*">
+    <input type="file" capture="user" accept="image/*">
+</body>
+
+</html>
