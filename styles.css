@@ -2,7 +2,9 @@ body {
     background-color: powderblue;
 }
 
-h1 {
+h1,
+h2,
+h3 {
     color: #000000;
     text-align: center;
 }
