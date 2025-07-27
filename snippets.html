@@ -22,6 +22,7 @@
             </ul>
         </nav>
     </header>
+
     <section id="section8">
         <!-- Snippets -->
         <!-- This section can contain code snippets or examples -->
@@ -34,9 +35,18 @@
             <input type="file" capture="environment" accept="video/*">
             <input type="file" capture="user" accept="image/*">
         </pre>
+        <p>Use the following HTML code to create a simple form:</p>
+        <pre>
+            <form action="/submit" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <input type="submit" value="Submit">
+            </form>
+        </pre>
         <a href="#section7">Top of Page</a>
     </section>
     <hr>
+
     <section id="section9">
         <!-- Snippets -->
         <!-- This section can contain code snippets or examples -->
@@ -53,9 +63,16 @@
                 color: #333;
             }
         </pre>
+        <p>Use the following CSS code to create a gradient background:</p>
+        <pre>
+            body {
+                background: linear-gradient(to right, #ff7e5f, #feb47b);
+            }
+        </pre>
         <a href="#section7">Top of Page</a>
     </section>
     <hr>
+
     <section id="section10">
         <!-- Snippets -->
         <!-- This section can contain code snippets or examples -->
@@ -67,9 +84,18 @@
                 console.log('Document is ready!');
             });
         </pre>
+        <p>Use the following JavaScript code to handle form submissions:</p>
+        <pre>
+            document.querySelector('form').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the default form submission
+                const name = document.getElementById('name').value;
+                console.log('Form submitted with name:', name);
+            });
+        </pre>
         <a href="#section7">Top of Page</a>
     </section>
     <hr>
+
     <section id="section11">
         <!-- Snippets -->
         <!-- This section can contain code snippets or examples -->
@@ -84,15 +110,31 @@
                 // Process the form data
             }
         </pre>
+        <p>Use the following PHP code to connect to a MySQL database:</p>
+        <pre>
+            $servername = "localhost";
+            $username = "username";
+            $password = "password";
+            $dbname = "database";
+
+            // Create connection
+            $conn = new mysqli($servername, $username, $password, $dbname);
+
+            // Check connection
+            if ($conn->connect_error) {
+                die("Connection failed: " . $conn->connect_error);
+            }
+            echo "Connected successfully";
+        </pre>
         <a href="#section7">Top of Page</a>
     </section>
     <hr>
+
     <section id="section12">
         <!-- Snippets -->
         <!-- This section can contain code snippets or examples -->
         <h2>SQL Snippets</h2>
         <p>Here you can add your SQL code snippets or examples.</p>
-        <p>This is the final section of the document.</p>
         <br>
         <p>Use the following SQL code to create a table:</p>
         <pre>
@@ -101,6 +143,10 @@
                 name VARCHAR(100) NOT NULL,
                 email VARCHAR(100) NOT NULL
             );
+        </pre>
+        <p>Use the following SQL code to insert data into a table:</p>
+        <pre>
+            INSERT INTO users (name, email) VALUES ('John Doe', 'john@example.com');
         </pre>
         <a href="#section7">Top of Page</a>
     </section>
