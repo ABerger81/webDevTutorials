@@ -1,93 +1,176 @@
-<!-- '!DOCTYPE' declaration for HTML5 -->
+<!-- <!DOCTYPE> declaration for HTML5 represents the document type, and helps the browsers to render the content correctly. It must only appear once at the beginning of the document (before any HTML tags). -->
 <!DOCTYPE html>
-<!-- 'html' element is the root element of an HTML page -->
-<!-- 'lang' attribute specifies the language of the document, e.g., 'en' for English -->
+<!-- <html> element is the root element of an HTML page -->
+<!-- <lang> attribute specifies the language of the document, e.g., 'en' for English -->
 <html lang="en">
 
-<!-- 'head' contains meta-information about the HTML document -->
-<!-- 'meta' defines metadata about an HTML document, e.g., character set, viewport settings, etc. -->
-<!-- 'charset=UTF-8' defines the character encoding for the HTML document -->
-<!-- 'viewport' sets the visible area of the web page, e.g., width=device-width, initial-scale=1.0 -->
+<!-- <head> contains meta-information about the HTML document -->
+<!-- <title> defines the title of the HTML document, displayed in the browser tab -->
+<!-- The title should be descriptive and relevant to the content of the page -->
+<!-- <meta> defines metadata about an HTML document, e.g., character set, viewport settings, etc. -->
+<!-- <charset=UTF-8> defines the character encoding for the HTML document -->
+<!-- <viewport> sets the visible area of the web page, e.g., width=device-width, initial-scale=1.0 -->
 
 <head>
+    <title>My first web page</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 'title' defines the title of the HTML document, displayed in the browser tab -->
-    <!-- The title should be descriptive and relevant to the content of the page -->
-    <title>Document</title>
+    <meta name="Keywords" content="HTML, CSS, JavaScript, PHP, SQL">
+    <meta> name="Description" content="This is a simple HTML document with lots
+    of examples of how to use HTML, CSS, JavaScript, SQL, PHP, and more.">
 </head>
 
-<!-- 'body' contains the content of the HTML document, e.g., text, images, links, etc. -->
-<!-- 'style' element defines internal CSS styles for the HTML document -->
+<!-- <body> contains the content of the HTML document, e.g., text, images, links, etc. -->
+<!-- <style> element defines internal CSS styles for the HTML document -->
 
-<body style="background-color: blue;">
-    <!-- 'section' element defines a section in the document -->
-    <!-- It can be used to group related content together -->
-    <section style="color: white;">
-        <!-- 'h1' element defines a top-level heading -->
-        <!-- 'p' element defines a paragraph -->
-        <!-- 'a' element defines a hyperlink -->
-        <!-- 'img' element defines an image -->
-        <!-- 'br' element defines a line break -->
-        <!-- 'style' attribute can be used to apply inline styles to elements -->
-        <!-- 'title' attribute provides additional information about an element, displayed as a tooltip when hovering over the element -->
-        <!-- 'h1 - h6' defines HTML headings -->
+<body>
+    <!-- <header> element defines a header section -->
+    <!-- <h1> element defines a top-level heading -->
+    <!-- <nav> element defines a navigation section -->
+    <!-- <p> element defines a paragraph -->
+    <!-- <a> element defines a hyperlink -->
+    <!-- <img> element defines an image -->
+    <!-- <br> element defines a line break -->
+    <!-- <style> attribute can be used to apply inline styles to elements -->
+    <!-- <title> attribute provides additional information about an element, displayed as a tooltip when hovering over the element -->
+    <header>
+        <!-- <h1> - <h6> defines HTML headings. <h1> is the highest level, <h6> is the lowest level -->
         <h1>Welcome to My Web Page</h1>
-        <!-- 'p' defines a paragraph -->
+        <!-- <p> defines a paragraph -->
         <p>This is a simple HTML document.</p>
-        <!-- 'a' defines a hyperlink, 'href' attribute specifies the URL of the page the link goes to -->
-        <!-- 'target="_blank"' opens the link in a new tab -->
-        <a href="https://www.w3schools.com" target="_blank">This is a link</a>
-        <!-- 'img' defines an image, 'src' attribute specifies the path to the image file, 'alt' attribute provides alternative text for the image -->
-        <!-- 'width' and 'height' attributes specify the dimensions of the image -->
+        <!-- <nav> element defines a navigation section -->
+        <nav>
+            <ul>
+                <li><a href="#section1"></a></li>
+                <li><a href="#section2">HTML Links</a></li>
+                <li><a href="#section3">HTML Styles</a></li>
+                <li><a href="#section4">HTML Text Formatting</a></li>
+                <li><a href="#section5">HTML Colors</a></li>
+                <li><a href="#section6">HTML Styles - CSS</a></li>
+                <li><a href="#section7">Snippets</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- <section> element defines a section in the document -->
+    <!-- It can be used to group related content together -->
+    <section>
+        <!-- Syntax: <a href="url">link text/image</a> -->
+        <!-- <a> element defines a hyperlink -->
+        <!-- 'href' attribute specifies the URL of the page the link goes to -->
+        <!-- 'target' attribute specifies where to open the linked document -->
+        <!-- Possible values for 'target' attribute: -->
+        <!-- '_self' opens the link in the same frame as it was clicked (this is default) -->
+        <!-- '_blank' opens the link in a new tab -->
+        <!-- '_parent' opens the link in the parent frame -->
+        <!-- '_top' opens the link in the full body of the window -->
+        <!-- W3C recommends quotes around attribute values in HTML, and demands quotes for stricter document types like XHTML -->
+        <h2>HTML Links</h2>
+        <h3>HTML Attributes</h3>
+        <a href="https://www.google.com" target="_blank">This is a link to
+            Google and opens in a new tab</a>
+        <!-- <img> tag is used to embed an image in an HTML page. The 'src' attribute specifies the path to the image file, 'alt' attribute provides alternative text for the image -->
+        <!-- 'width' and 'height' attributes specify the dimensions of the image in px (pixels) -->
+        <!-- 'alt' attribute provides alternative text for the image -->
+        <h3>HTML Images</h3>
         <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
-        <!-- 'br' defines a line break -->
-        <p>This is a paragraph with a line break<br>Here is the next line</p>
-        <!-- 'style' e.g., color, font, size, and more to an element <tagname style="property:value;" -->
-        <p style="font-size: 20px;">This is a larger paragraph</p>
+        <!-- use <img> (image) as a link -->
+        <a href="default.asp">
+            <img src="smiley.gif" alt="HTML tutorial"
+                style="width:42px;height:42px;">
+        </a>
+        <!-- 'mailto:' creates a link that opens the user's email client -->
+        <a href="mailto:someone@example.com">Send email</a>
+        <!-- 'tel:' creates a link that opens the user's phone dialer -->
+        <a href="tel:+1234567890">Call us</a>
+        <!-- 'sms:' creates a link that opens the user's SMS app -->
+        <a href="sms:+1234567890">Send SMS</a>
+        <!-- 'file:' creates a link to a local file -->
+        <a href="file.txt">Open local file</a>
+        <!-- 'javascript:' creates a link that executes JavaScript code -->
+        <a href="javascript:alert('Hello World!')">Click me</a>
+        <!-- 'data:' creates a link that embeds data directly in the link -->
+        <a href="data:text/plain,Hello%20World!">Download text file</a>
+        <!-- 'https:' creates a link to a secure website -->
+        <a href="https://www.example.com">This is a link to a secure website</a>
+        <!-- 'http:' creates a link to a non-secure website -->
+        <a href="http://www.example.com">This is a link to a non-secure
+            website</a>
+        <!-- 'ftp:' creates a link to an FTP server -->
+        <a href="ftp://ftp.example.com">This is a link to an FTP server</a>
+        <!-- 'onclick' attribute defines a JavaScript function to be executed when the button is clicked -->
+        <button onclick="alert('Button clicked!')">Click me</button>
+        <!-- 'download' attribute specifies that the target will be downloaded when a user clicks on the hyperlink -->
+        <a href="file.txt" download>Download file</a>
+        <!-- 'rel' attribute specifies the relationship between the current document and the linked document -->
+        <a href="https://www.example.com" rel="noopener noreferrer">This is a
+            link with rel attribute</a>
+        <!-- 'hreflang' attribute specifies the language of the linked document -->
+        <a href="https://www.example.com" hreflang="en">This is a link with
+            hreflang attribute</a>
+        <!-- 'type' attribute specifies the type of the linked document -->
+        <a href="https://www.example.com" type="text/html">This is a link with
+            type attribute</a>
+        <!-- 'ping' attribute specifies a list of URLs to be notified if the user follows the hyperlink -->
+        <a href="https://www.example.com"
+            ping="https://www.example.com/ping">This is a link with ping
+            attribute</a>
+        <!-- 'referrerpolicy' attribute specifies the referrer information to be sent when the user follows the hyperlink -->
+        <a href="https://www.example.com" referrerpolicy="no-referrer">This is a
+            link with referrerpolicy attribute</a>
+        <!-- 'accesskey' attribute specifies a shortcut key to activate/focus an element -->
+        <a href="https://www.example.com" accesskey="h">This is a link with
+            accesskey attribute</a>
+        <!-- 'tabindex' attribute specifies the tab order of an element -->
+        <a href="https://www.example.com" tabindex="1">This is a link with
+            tabindex attribute</a>
+
+
+        <p style="font-size: 20px;">This is a 20px paragraph</p>
         <!-- 'title' attribute provides additional information about an element, displayed as a tooltip when hovering over the element -->
         <p title="I'm a tooltip">This is a paragraph with a tooltip</p>
-        <!-- 'hr' defines a thematic break, often displayed as a horizontal rule, separates content -->
+        <!-- <hr> defines a thematic break, often displayed as a horizontal rule, separates content -->
         <hr>
+        <!-- HTML elements with no content are called empty elements. <br> tag defines a line break, and is an empty element without a closing tag -->
+        <p>This is a paragraph with a line break<br>Here is the next line</p>
         <br>
 
-        <!-- 'pre' element defines preformatted text. The text inside a <pre> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks -->
+        <!-- <pre> element defines preformatted text. The text inside a <pre> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks -->
         <pre>
-                My Bonnie lies over the ocean.
-                
-                My Bonnie lies over the sea.
-                
-                My Bonnie lies over the ocean.
-                
-                Oh, bring back my Bonnie to me.
-            </pre>
+            My Bonnie lies over the ocean.
+                        
+            My Bonnie lies over the sea.
+            
+            My Bonnie lies over the ocean.
+            
+            Oh, bring back my Bonnie to me.
+        </pre>
     </section>
     <hr>
-    <br>
 
     <section>
         <!-- HTML Styles ('inline') -->
+        <!-- <tagname style="property:value;" -->
+        <!-- 'style' e.g., color, font, size, and more to an element  -->
         <!-- Use the 'style' attribute for styling HTML elements -->
         <!-- Use 'background-color' for background color -->
         <!-- Use 'color' for text colors -->
         <!-- Use 'font-family' for text fonts -->
         <!-- Use 'font-size' for text sizes -->
         <!-- Use 'text-align' for text alignment  -->
-        <h1>HTML Styles ('inline')</h1>
-        <h2 style="background-color: yellow;">This is a 'h2' heading</h2>
+        <h2>HTML Styles ('inline')</h2>
+        <h3 style="background-color: yellow;">This is a 'h3' heading</h3>
         <p style="background-color: tomato;">This is a paragraph</p>
-        <h2 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">This font
-            is 'Verdana'</h2>
-        <h2 style="font-family: 'Courier New', monospace;">This font is 'Courier
-            New'</h2>
-        <h2 style="font-size: 300%;">This heading is of size 300%</h2>
-        <p style="font-size: 1.2rem;">This paragraph is of size
+        <h3 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">This font
+            is 'Verdana'</h3>
+        <h3 style="font-family: 'Courier New', monospace;">This font is 'Courier
+            New'</h3>
+        <h3 style="font-size: 300%;">This heading 'h3' is of size 300%</h3>
+        <p style="font-size: 1.2rem;">This paragraph 'p' is of size
             1.2rem</p>
-        <h2 style="text-align: center;">Centered Heading</h2>
+        <h3 style="text-align: center;">Centered Heading</h3>
         <p style="text-align: right;">This is a right-aligned paragraph</p>
     </section>
     <hr>
-    <br>
 
     <section>
         <!-- HTML Text Formatting -->
@@ -101,7 +184,7 @@
         <!-- Use the <ins> element to define inserted text -->
         <!-- Use the <del> element to define deleted text -->
         <!-- Use the <mark> element to define marked/highlighted text -->
-        <h1>HTML Text Formatting</h1>
+        <h2>HTML Text Formatting Elements</h2>
         <b>This text is bold</b><br>
         <strong>This text is important!</strong><br>
         <i>This text is italic</i><br>
@@ -121,12 +204,14 @@
         <!-- <blockquote>	Defines a section that is quoted from another source -->
         <!-- <cite>	Defines the title of a work -->
         <!-- <q> Defines a short inline quotation -->
-        <h1>Quotations and Citation</h1>
+        <h2>HTML Quotations and Citation Elements</h2>
         <p>Here is a quote from WWF's website</p>
         <blockquote cite="http://www.worldwildlife.org/who/index.html">
-            For 60 years, WWF has worked to help people and nature thrive. As
+            For 60 years, WWF has worked to help people and nature thrive.
+            As
             the
-            world's leading conservation organization, WWF works in nearly 100
+            world's leading conservation organization, WWF works in nearly
+            100
             countries. At every level, we collaborate with people around the
             world
             to develop and deliver innovative solutions that protect
@@ -135,7 +220,8 @@
         </blockquote>
         <p>WWF's goal is to: <q>Build a future where people live in harmony
                 withnature.</q></p>
-        <p>The <abbr title="World Health Organization">WHO</abbr> was founded in
+        <p>The <abbr title="World Health Organization">WHO</abbr> was
+            founded in
             1948.</p>
         <address>
             Written by John Doe.<br>
@@ -149,15 +235,16 @@
         <bdo dir="rtl">This text will be written from right to left</bdo>
     </section>
     <hr>
-    <br>
 
     <section>
         <!-- Colors -->
         <!-- Add Color Picker -->
-        <h1>Colors</h1>
+        <h2>Colors</h2>
+        <!-- Color picker in input field -->
         <b>Color picker in input field</b>
         <input type="color">
         <!-- Text Color -->
+        <h2>Text Color</h2>
         <p style="color: tomato;">Hello World</p>
         <p style="color: dodgerblue;">Lorem ipsum dolor sit amet consectetur,
             adipisicing elit. Reiciendis aperiam in,</p>
@@ -165,10 +252,13 @@
             asperiores, ipsa nostrum eum eligendi minus aut, doloremque placeat
             necessitatibus recusandae! Incidunt, maiores?</p>
         <!-- Border Color -->
+        <h3>Border Color</h3>
         <p style="border: 2px solid tomato;">Hello World</p>
         <p style="border: 2px solid dodgerblue;">Hello World</p>
         <p style="border: 2px solid violet;">Hello World</p>
         <!-- Color Values -->
+        <h3>Color Values</h3>
+        <!-- rgb(red, green, blue), red, green, and blue values between 0 and 255 -->
         <!-- rgb(0, 0, 0)=black, rgb(255, 255, 255)=white, equal values = shades of gray (rgb(128, 128, 128)=gray) -->
         <p style="background-color: rgb(255, 99, 71);">Hello World rgb(255, 99,
             71)
@@ -187,23 +277,22 @@
             saturation, lightness, alpha)</p>
     </section>
     <hr>
-    <br>
 
     <section>
         <!-- HTML Styles - CSS -->
         <!-- Use the HTML style attribute for inline styling
-            Use the HTML <style> element to define internal CSS
-            Use the HTML <link> element to refer to an external CSS file
-            Use the HTML <head> element to store <style> and <link> elements
-            Use the CSS color property for text colors
-            Use the CSS font-family property for text fonts
-            Use the CSS font-size property for text sizes
-            Use the CSS border property for borders
-            Use the CSS padding property for space inside the border
-            Use the CSS margin property for space outside the border -->
+                    Use the HTML <style> element to define internal CSS
+                    Use the HTML <link> element to refer to an external CSS file
+                    Use the HTML <head> element to store <style> and <link> elements
+                    Use the CSS color property for text colors
+                    Use the CSS font-family property for text fonts
+                    Use the CSS font-size property for text sizes
+                    Use the CSS border property for borders
+                    Use the CSS padding property for space inside the border
+                    Use the CSS margin property for space outside the border -->
         <!-- Can be added to HTML documents in 3 ways: -->
         <!-- Inline- by using the style attribute inside HTML elements -->
-        <h1>HTML Styles - CSS</h1>
+        <h2>HTML Styles - CSS</h2>
         <p style="color: red;">This is a red paragraph</p>
         <!-- Internal- by using a <style> element in the <head> section -->
         <style>
@@ -231,11 +320,11 @@
         <p style="margin: 20px;">This is a paragraph with a margin</p>
     </section>
     <hr>
-    <br>
 
     <section>
         <!-- Snippets -->
         <!-- Capture/upload image/video from users mobile device -->
+        <h2>Snippets</h2>
         <input type="file" capture="environment" accept="video/*">
         <input type="file" capture="user" accept="image/*">
     </section>
