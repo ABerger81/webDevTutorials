@@ -1,8 +1,17 @@
-<!-- <!DOCTYPE> declaration for HTML5 represents the document type, and helps the browsers to render the content correctly. It must only appear once at the beginning of the document (before any HTML tags). -->
 <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My first web page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Keywords" content="HTML, CSS, JavaScript, PHP, SQL">
+    <meta name="Description" content="This is a simple HTML document with lots
+    of examples of how to use HTML, CSS, JavaScript, SQL, PHP, and more.">
+</head>
+<!-- <!DOCTYPE> declaration for HTML5 represents the document type, and helps the browsers to render the content correctly. It must only appear once at the beginning of the document (before any HTML tags). -->
 <!-- <html> element is the root element of an HTML page -->
 <!-- <lang> attribute specifies the language of the document, e.g., 'en' for English -->
-<html lang="en">
 
 <!-- <head> contains meta-information about the HTML document -->
 <!-- <title> defines the title of the HTML document, displayed in the browser tab -->
@@ -11,14 +20,6 @@
 <!-- <charset=UTF-8> defines the character encoding for the HTML document -->
 <!-- <viewport> sets the visible area of the web page, e.g., width=device-width, initial-scale=1.0 -->
 
-<head>
-    <title>My first web page</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Keywords" content="HTML, CSS, JavaScript, PHP, SQL">
-    <meta> name="Description" content="This is a simple HTML document with lots
-    of examples of how to use HTML, CSS, JavaScript, SQL, PHP, and more.">
-</head>
 
 <!-- <body> contains the content of the HTML document, e.g., text, images, links, etc. -->
 <!-- <style> element defines internal CSS styles for the HTML document -->
@@ -116,7 +117,6 @@
                 <td>Scalable Vector Graphics</td>
                 <td>.svg</td>
             </tr>
-            </tr>
         </table>
         <p>Here are some examples of HTML images:</p>
         <img src="w3schools.jpg" alt="W3Schools.com"
@@ -138,7 +138,7 @@
         <!-- 'mailto:' creates a link that opens the user's email client -->
         <a href="mailto:someone@example.com">Send email</a>
         <br>
-        <p>Use <img> (image) as a link</p>
+        <p>Use (image) as a link</p>
         <a href="default.asp">
             <img src="./images/gif-graphics-interchange-format/smiley.gif"
                 alt="HTML tutorial" style="width:42px;height:42px;">
@@ -228,14 +228,14 @@
 
         <!-- <pre> element defines preformatted text. The text inside a <pre> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks -->
         <pre>
-            My Bonnie lies over the ocean.
+                        My Bonnie lies over the ocean.
+                                    
+                        My Bonnie lies over the sea.
                         
-            My Bonnie lies over the sea.
-            
-            My Bonnie lies over the ocean.
-            
-            Oh, bring back my Bonnie to me.
-        </pre>
+                        My Bonnie lies over the ocean.
+                        
+                        Oh, bring back my Bonnie to me.
+                    </pre>
         <br>
         <a href="#section7">Top of Page</a>
     </section>
@@ -251,7 +251,7 @@
         <!-- Use 'font-family' for text fonts -->
         <!-- Use 'font-size' for text sizes -->
         <!-- Use 'text-align' for text alignment  -->
-        <h2 id="">HTML Styles ('inline')</h2>
+        <h2 id="#section3">HTML Styles ('inline')</h2>
         <h3 style="background-color: yellow;">This is a 'h3' heading</h3>
         <p style="background-color: tomato;">This is a paragraph</p>
         <h3 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">This font
@@ -381,26 +381,26 @@
     <section id="section6">
         <!-- HTML Styles - CSS -->
         <!-- Use the HTML style attribute for inline styling
-                    Use the HTML <style> element to define internal CSS
-                    Use the HTML <link> element to refer to an external CSS file
-                    Use the HTML <head> element to store <style> and <link> elements
-                    Use the CSS color property for text colors
-                    Use the CSS font-family property for text fonts
-                    Use the CSS font-size property for text sizes
-                    Use the CSS border property for borders
-                    Use the CSS padding property for space inside the border
-                    Use the CSS margin property for space outside the border -->
+        Use the HTML <style> element to define internal CSS
+        Use the HTML <link> element to refer to an external CSS file
+        Use the HTML <head> element to store <style> and <link> elements
+        Use the CSS color property for text colors
+        Use the CSS font-family property for text fonts
+        Use the CSS font-size property for text sizes
+        Use the CSS border property for borders
+        Use the CSS padding property for space inside the border
+        Use the CSS margin property for space outside the border -->
         <!-- Can be added to HTML documents in 3 ways: -->
         <!-- Inline- by using the style attribute inside HTML elements -->
         <h2>HTML Styles - CSS</h2>
         <p style="color: red;">This is a red paragraph</p>
-        <!-- Internal- by using a <style> element in the <head> section -->
+        <!-- Internal- by using a <style> element in the <head> section
         <style>
             p {
                 color: blue;
             }
         </style>
-        <p>This is a blue paragraph</p>
+        <p>This is a blue paragraph</p> -->
         <!-- External- by using a <link> element to link an external CSS file -->
         <link rel="stylesheet" type="text/css" href="styles.css">
         <p>This is a paragraph with an external CSS file</p>
