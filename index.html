@@ -436,12 +436,20 @@
 
         <map name="workmap">
             <area shape="rect" coords="34,44,270,350" alt="Computer"
-                href="computer.htm">
+                href="computer.htm" onclick="myFunction()">
             <area shape="rect" coords="290,172,333,250" alt="Phone"
-                href="phone.htm">
+                href="phone.htm" onclick="myFunction()">
             <area shape="circle" coords="337,300,44" alt="Coffee"
-                href="coffee.htm">
+                href="coffee.htm" onclick="myFunction()">
         </map>
+
+        <script>
+            function myFunction() {
+                alert("You clicked on the computer!"),
+                    alert("You clicked on the phone!"),
+                    alert("You clicked on the coffee cup!")
+            }
+        </script>
     </section>
     <hr>
 
