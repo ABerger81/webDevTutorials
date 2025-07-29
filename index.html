@@ -430,6 +430,7 @@
                 <td>.svg</td>
             </tr>
         </table>
+        <h3>Image Map Example</h3>
         <!-- <map> defines an image map (img with clickable areas). The areas are defined with one or more <area> tags. -->
         <img src="./img/jpeg-joint-photographic-expert-group-image/workplace.jpg"
             alt="Workplace" usemap="#workmap">
@@ -450,6 +451,62 @@
                     alert("You clicked on the coffee cup!")
             }
         </script>
+        <h3>Background Image</h3>
+        <!-- Use the CSS 'background-image' property to set a background image for an element -->
+        <!-- On a <p> element -->
+        <p
+            style="background-image: url('./img/jpeg-joint-photographic-expert-group-image/workplace.jpg');">
+        </p>
+        <!-- In the <style> element , in the <head> section -->
+        <!-- <style>
+            p {
+                background-image: url('./img/jpeg-joint-photographic-expert-group-image/workplace.jpg');
+            }
+        </style> -->
+        <!-- If you want to set a background image for the entire page, specify the background image on the <body> element -->
+
+        <!-- <style>
+            body {
+                background-image: url('./img/jpeg-joint-photographic-expert-group-image/workplace.jpg');
+            }
+        </style> -->
+
+        <!-- If the background image is smaller than the element, the image will repeat itself, horizontally and vertically, until it reaches the end of the element: -->
+        <!-- To avoid the background image from repeating itself, set the 'background-repeat' property to 'no-repeat'. -->
+        <!-- <style>
+            body {
+                background-image: url('./img/jpeg-joint-photographic-expert-group-image/workplace.jpg');
+                background-repeat: no-repeat;
+            }
+        </style> -->
+
+        <!-- Background Cover
+        If you want the background image to cover the entire element, you can set the background-size property to cover.
+
+        Also, to make sure the entire element is always covered, set the background-attachment property to fixed:
+
+        This way, the background image will cover the entire element, with no stretching (the image will keep its original proportions): -->
+        <!-- <style>
+        body {
+        background-image: url('img_girl.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        }
+        </style> -->
+
+        <!-- Background Stretch
+        If you want the background image to stretch to fit the entire element, you can set the 'background-size' property to 100% 100%: -->
+        <!-- <style>
+        body {
+        background-image: url('img_girl.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        }
+        </style> -->
+        <h3>Picture Element</h3>
+
     </section>
     <hr>
 
