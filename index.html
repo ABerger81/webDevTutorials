@@ -12,15 +12,12 @@
 <!-- <!DOCTYPE> declaration for HTML5 represents the document type, and helps the browsers to render the content correctly. It must only appear once at the beginning of the document (before any HTML tags). -->
 <!-- <html> element is the root element of an HTML page -->
 <!-- <lang> attribute specifies the language of the document, e.g., 'en' for English -->
-
 <!-- <head> contains meta-information about the HTML document -->
 <!-- <title> defines the title of the HTML document, displayed in the browser tab -->
 <!-- The title should be descriptive and relevant to the content of the page -->
 <!-- <meta> defines metadata about an HTML document, e.g., character set, viewport settings, etc. -->
 <!-- <charset=UTF-8> defines the character encoding for the HTML document -->
 <!-- <viewport> sets the visible area of the web page, e.g., width=device-width, initial-scale=1.0 -->
-
-
 <!-- <body> contains the content of the HTML document, e.g., text, images, links, etc. -->
 <!-- <style> element defines internal CSS styles for the HTML document -->
 
@@ -42,6 +39,7 @@
         <p>This is a simple HTML document.</p>
         <!-- <nav> element defines a navigation section -->
         <nav>
+            <!-- <ul> element defines an unordered list -->
             <ul>
                 <!-- <li> defines a list item -->
                 <!-- Use the href attribute (href="#value") to link to the bookmark -->
@@ -391,6 +389,7 @@
         <!-- <area>	Defines a clickable area inside an image map -->
         <!-- <picture>	Defines a container for multiple image resources -->
         <h2>HTML Images</h2>
+        <!-- Syntax: <img src="url" alt="alternate text"> -->
         <h3>Common Image Formats</h3>
         <p>Here are the most common image file types, which are supported in all
             browsers (Chrome, Edge, Firefox, Safari, Opera):</p>
@@ -431,6 +430,18 @@
                 <td>.svg</td>
             </tr>
         </table>
+        <!-- <map> defines an image map (img with clickable areas). The areas are defined with one or more <area> tags. -->
+        <img src="./img/jpeg-joint-photographic-expert-group-image/workplace.jpg"
+            alt="Workplace" usemap="#workmap">
+
+        <map name="workmap">
+            <area shape="rect" coords="34,44,270,350" alt="Computer"
+                href="computer.htm">
+            <area shape="rect" coords="290,172,333,250" alt="Phone"
+                href="phone.htm">
+            <area shape="circle" coords="337,300,44" alt="Coffee"
+                href="coffee.htm">
+        </map>
     </section>
     <hr>
 
