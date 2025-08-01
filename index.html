@@ -3,6 +3,8 @@
 
 <head>
     <title>My first web page</title>
+    <link rel="icon" type="image/x-icon"
+        href="/tutorials/img/favicon/favicon.ico">"
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Keywords" content="HTML, CSS, JavaScript, PHP, SQL">
@@ -50,6 +52,7 @@
                 <li><a href="#section05">HTML Colors</a></li>
                 <li><a href="#section06">HTML Styles - CSS</a></li>
                 <li><a href="#section07">HTML Images</a></li>
+                <li><a href="#section08">HTML Favicon</a></li>
                 <li><a href="snippets.html#section00">Snippets</a></li>
             </ul>
         </nav>
@@ -511,9 +514,9 @@
 
         <picture>
             <source media="(min-width: 650px)"
-                srcset="tutorials\img\jpeg-joint-photographic-expert-group-image\img_food.jpg">
+                srcset="/tutorials/img/jpeg-joint-photographic-expert-group-image/img_food.jpg">
             <source media="(min-width: 465px)"
-                srcset="tutorials\img\jpeg-joint-photographic-expert-group-image\img_car.jpg">
+                srcset="/tutorials/img/jpeg-joint-photographic-expert-group-image/img_car.jpg">
             <img src="/tutorials/img/jpeg-joint-photographic-expert-group-image/img_girl.jpg"
                 alt="a girl" style="width:auto;">
         </picture>
@@ -545,6 +548,27 @@
         Some browsers or devices may not support all image formats. By using the <picture> element, you can add images of all formats, and the browser will use the first format it recognizes, and ignore any of the following elements. -->
     </section>
     <hr>
+
+    <section id="section08">
+        <h2>HTML Favicon</h2>
+        <!-- To add a favicon to your website, either save your favicon image to the root directory of your webserver, or create a folder in the root directory called images, and save your favicon image in this folder. A common name for a favicon image is "favicon.ico".
+        Next, add a <link> element to your "index.html" file, after the <title> element, like this: -->
+
+        <!-- 
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>My Page Title</title>
+            <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        </head>
+        <body>
+
+        <h1>This is a Heading</h1>
+        <p>This is a paragraph.</p>
+
+        </body>
+        </html> -->
+        <hr>
 
 </body>
 
