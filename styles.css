@@ -16,6 +16,8 @@ p {
 
 table {
     font-family: arial, sans-serif;
+    border: 1px solid black;
+    /* 'border-collapse' avoids double borders */
     border-collapse: collapse;
     width: 100%;
 }

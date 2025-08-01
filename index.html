@@ -3,13 +3,14 @@
 
 <head>
     <title>My first web page</title>
-    <link rel="icon" type="image/x-icon"
-        href="/tutorials/img/favicon/favicon.ico">"
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Keywords" content="HTML, CSS, JavaScript, PHP, SQL">
+    <meta name="Keywords" content="HTML, CSS, JavaScript, C#, SQL">
     <meta name="Description" content="This is a simple HTML document with lots
-    of examples of how to use HTML, CSS, JavaScript, SQL, PHP, and more.">
+    of examples of how to use HTML, CSS, JavaScript, SQL, C#, and more.">
+    <link rel="icon" type="image/x-icon"
+        href="/tutorials/img/favicon/favicon.ico">
+    <link rel="stylesheet" href="styles.css">>
 </head>
 <!-- <!DOCTYPE> declaration for HTML5 represents the document type, and helps the browsers to render the content correctly. It must only appear once at the beginning of the document (before any HTML tags). -->
 <!-- <html> element is the root element of an HTML page -->
@@ -17,6 +18,7 @@
 <!-- <head> contains meta-information about the HTML document -->
 <!-- <title> defines the title of the HTML document, displayed in the browser tab -->
 <!-- The title should be descriptive and relevant to the content of the page -->
+<!-- The page title is very important for search engine optimization (SEO). The text is used by search engine algorithms to decide the order when listing pages in search results. -->
 <!-- <meta> defines metadata about an HTML document, e.g., character set, viewport settings, etc. -->
 <!-- <charset=UTF-8> defines the character encoding for the HTML document -->
 <!-- <viewport> sets the visible area of the web page, e.g., width=device-width, initial-scale=1.0 -->
@@ -53,6 +55,7 @@
                 <li><a href="#section06">HTML Styles - CSS</a></li>
                 <li><a href="#section07">HTML Images</a></li>
                 <li><a href="#section08">HTML Favicon</a></li>
+                <li><a href="#section09">HTML Tables</a></li>
                 <li><a href="snippets.html#section00">Snippets</a></li>
             </ul>
         </nav>
@@ -551,24 +554,186 @@
 
     <section id="section08">
         <h2>HTML Favicon</h2>
-        <!-- To add a favicon to your website, either save your favicon image to the root directory of your webserver, or create a folder in the root directory called images, and save your favicon image in this folder. A common name for a favicon image is "favicon.ico".
-        Next, add a <link> element to your "index.html" file, after the <title> element, like this: -->
+        <p>To add a favicon to your website, either save your favicon image to
+            the root directory of your webserver, or create a folder in the root
+            directory called images, and save your favicon image in this folder.
+            A common name for a favicon image is "favicon.ico".
+            Next, add a
+            'link' element to your "index.html" file, after the 'title' element
+            in the 'head' section.
+        </p>
 
-        <!-- 
-        <!DOCTYPE html>
-        <html>
-        <head>
-            <title>My Page Title</title>
-            <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-        </head>
-        <body>
+        <pre>
+            <code>
+                'html'
+                    'head'
+                        'title>My Page Title'/title'
+                        'link rel="icon" type="image/x-icon" href="/images/favicon.ico"'
+                    '/head'
+                    'body'
+                        'p'...'p'
+                    'body'
+                '/html'
+            </code> 
+        </pre>
 
-        <h1>This is a Heading</h1>
-        <p>This is a paragraph.</p>
+    </section>
+    <hr>
 
-        </body>
-        </html> -->
-        <hr>
+    <section id="section09">
+        <h2>HTML Tables</h2>
+        <p>HTML tables allow web developers to arrange data into rows and
+            columns</p>
+        <p>
+            'tr' (table rows) 'th' (table headers), and 'td' (table data cells)
+        </p>
+
+        <table>
+            <tr>
+                <th>Tag</th>
+                <th>Description</th>
+            <tr>
+                <td>'table'</td>
+                <td>Defines a table</td>
+            </tr>
+            <tr>
+                <td>'th'</td>
+                <td>Defines a header cell in a table</td>
+            </tr>
+            <tr>
+                <td>'tr'</td>
+                <td>Defines a row in a table</td>
+            </tr>
+            <tr>
+                <td>'td'</td>
+                <td>Defines a cell in a table</td>
+            </tr>
+            <tr>
+                <td>'caption'</td>
+                <td>Defines a table caption</td>
+            </tr>
+            <tr>
+                <td>'colgroup'</td>
+                <td>Specifies a group of one or more columns in a table for
+                    formatting</td>
+            </tr>
+            <tr>
+                <td>'col</td>
+                <td>Specifies column properties for each column within a
+                    'colgroup' element
+                </td>
+            </tr>
+            <tr>
+                <td>'thead'</td>
+                <td>Groups the header content in a table</td>
+            </tr>
+            <tr>
+                <td>'tbody'</td>
+                <td>Groups the body in a table</td>
+            </tr>
+            <tr>
+                <td>'tfoot'</td>
+                <td>Groups the footer in a table</td>
+            </tr>
+        </table>
+
+        <h3>HTML Table Borders</h3>
+        <p>To add a border, use the CSS 'border' property on 'table', 'th', and
+            'td' elements.</p>
+
+        <pre>
+            <code>
+            table, th {
+                border: 1px solid black;
+            }
+            </code>
+        </pre>
+
+        <p>To avoid having double borders, set the CSS 'border-collapse property
+            to 'collapse'.</p>
+        <p>If you give the border the same color as the document background, you
+            get the impression of an invisible border.</p>
+        <p>example:</p>
+        <pre>
+            <code>
+                table, th, td {
+                    border: 1px solid black;
+                    border-collapse: collapse;
+                }
+                th, td {
+                    background-color: solid black;
+                }
+            </code>
+        </pre>
+
+        <p>With the 'border-radius' property,the borders get rounded corners:
+        </p>
+        <p>Example:</p>
+        <pre>
+            <code>
+                table, th, td {
+                    border: 1px solid black;
+                    border-radius: 10px;
+                }
+            </code>
+        </pre>
+
+        <p>Skip the border around the table by leaving out 'table' from the css
+            selector.</p>
+        <p>Example:</p>
+        <pre>
+            <code>
+                <del>table</del>, th, td {
+                    border: 1px solid black;
+                    border-radius: 10px;
+                }
+            </code>
+        </pre>
+
+        <h3>HTML Table Width</h3>
+        <p>To set the widt of a table, add the 'style' attribute to the 'table'
+            element.</p>
+        <p>Example with 50% width:
+
+        <table style="width: 50%">
+            <tr>
+                <th>Heading 1</th>
+                <th>Heading 2</th>
+            </tr>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+            </tr>
+        </table>
+
+        <p>To set the size of a specific column, add the 'style' attribute on a
+            'th or 'td' element:</p>
+        <p>To set the height of a specific row, add the 'style' attribute on a
+            'tr' element:</p>
+        <p>Example with a caption, 100% width for the table, 70% width for the
+            first column and 200px height for the
+            second row:</p>
+        <table style="width:100%">
+            <caption>Example Table</caption>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+            <tr style="height:200px">
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+        </table>
+
+    </section>
+    <hr>
 
 </body>
 
